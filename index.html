@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tell DVLA - Motor Trader</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fff;
+    }
+    .top-banner {
+      background-color: #0b0c0c;
+      color: white;
+      padding: 10px 20px;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .top-banner-logo {
+      font-size: 18px;
+    }
+    .menu-section {
+      display: flex;
+      align-items: center;
+    }
+    .menu-text {
+      margin-right: 15px;
+    }
+    .search-icon {
+      width: 16px;
+      height: 16px;
+      background: url('https://upload.wikimedia.org/wikipedia/commons/5/55/Magnifying_glass_icon.svg') no-repeat center center;
+      background-size: contain;
+      display: inline-block;
+    }
+    .aqua-banner {
+      background-color: #1d70b8;
+      height: 8px;
+      margin: 0 20px;
+    }
+    .breadcrumb {
+      padding: 10px 20px;
+      font-size: 14px;
+      color: #6f777b;
+    }
+    .breadcrumb a {
+      color: #6f777b;
+      text-decoration: none;
+    }
+    .breadcrumb a:hover {
+      text-decoration: underline;
+    }
+    .section-title {
+      font-size: 24px;
+      font-weight: bold;
+      padding: 20px 20px 10px;
+    }
+    .section-text {
+      padding: 0 20px 10px;
+      font-size: 16px;
+    }
+    ul {
+      padding: 0 40px 20px;
+      list-style: disc;
+    }
+    .circle-button {
+      display: flex;
+      align-items: center;
+      padding: 10px 20px;
+    }
+    .circle-button input[type="radio"] {
+      appearance: none;
+      border: 2px solid #0b0c0c;
+      border-radius: 50%;
+      width: 32px;
+      height: 32px;
+      margin-right: 10px;
+      cursor: pointer;
+    }
+    .circle-button input[type="radio"]:checked {
+      background-color: #0b0c0c;
+    }
+    .next-step-banner {
+      background-color: #00703c;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin: 20px;
+      font-weight: bold;
+      text-decoration: none;
+      display: block;
+    }
+    .next-step-banner:hover {
+      background-color: #005a30;
+    }
+    .footer {
+      background-color: #f3f2f1;
+      padding: 20px;
+      border-top: 1px solid #d5d5d5;
+    }
+    .footer a {
+      color: #1d70b8;
+      text-decoration: none;
+    }
+    .footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <!-- Top banner -->
+  <div class="top-banner">
+    <div class="top-banner-logo">GOV.UK</div>
+    <div class="menu-section">
+      <div class="menu-text">Menu ▼</div>
+      <div class="search-icon"></div>
+    </div>
+  </div>
+
+  <!-- Aqua banner -->
+  <div class="aqua-banner"></div>
+
+  <!-- Breadcrumb -->
+  <div class="breadcrumb">
+    <a href="#">Home</a> > <a href="#">Buy, sell or scrap a vehicle</a>
+  </div>
+
+  <!-- Section title and text -->
+  <div class="section-title">1. Are you a motor trader?</div>
+  <div class="section-text">A motor trader can be any of the following:</div>
+
+  <!-- List -->
+  <ul>
+    <li>motor dealer</li>
+    <li>motor auctioneer</li>
+    <li>salvage dealer</li>
+    <li>finance or insurance company</li>
+    <li>fleet operator</li>
+    <li>car buying service</li>
+  </ul>
+
+  <!-- Radio buttons -->
+  <div class="section-text">Please select an option:</div>
+  <div class="circle-button">
+    <input type="radio" id="yes" name="motor-trader" value="yes">
+    <label for="yes">Yes</label>
+  </div>
+  <div class="circle-button">
+    <input type="radio" id="no" name="motor-trader" value="no">
+    <label for="no">No</label>
+  </div>
+
+  <!-- Next step button -->
+  <a href="#" class="next-step-banner">Next step</a>
+
+  <!-- Footer -->
+  <div class="footer">
+    <h3>Services and information</h3>
+    <a href="#">Benefits</a><br>
+    <a href="#">Births, deaths, marriages and care</a><br>
+    <a href="#">Business and self-employed</a><br>
+    <a href="#">Childcare and parenting</a><br>
+    <a href="#">Citizenship and living in the UK</a><br>
+    <a href="#">Crime, justice and the law</a><br>
+    <h3>Government activity</h3>
+    <a href="#">Departments</a><br>
+    <a href="#">News</a><br>
+    <a href="#">Guidance and regulation</a><br>
+    <a href="#">Research and statistics</a><br>
+    <a href="#">Policy papers and consultations</a><br>
+    <a href="#">Transparency</a><br>
+  </div>
+</body>
+</html>
