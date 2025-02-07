@@ -12,10 +12,15 @@
       background-color: #fff;
     }
     .top-banner {
-      background: url('Screenshot 2025-02-07 at 18.28.29.png') no-repeat center center;
-      background-size: cover;
-      height: 100px;
-      width: 100%;
+      background-color: #0b0c0c;
+      color: white;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .top-banner img {
+      height: 40px;
     }
     .aqua-banner {
       background-color: #1d70b8;
@@ -39,11 +44,6 @@
       font-size: 18px;
       font-weight: bold;
       color: #6f777b;
-    }
-    @media (max-width: 600px) {
-      .section-subtitle {
-        font-size: 16px;
-      }
     }
     .section-title {
       font-size: 24px;
@@ -100,11 +100,24 @@
     .footer a:hover {
       text-decoration: underline;
     }
+    @media (max-width: 600px) {
+      .section-title,
+      .section-text,
+      ul {
+        padding: 0 10px;
+      }
+    }
   </style>
 </head>
 <body>
-  <!-- Top banner with full-width image -->
-  <div class="top-banner"></div>
+  <!-- Top banner with image placeholders -->
+  <div class="top-banner">
+    <img src="Screenshot 2025-02-07 at 18.16.40.png" alt="Left logo">
+    <div>
+      <img src="Screenshot 2025-02-07 at 18.43.31.png" alt="Screenshot 2025-02-07 at 18.43.31.png" style="margin-right: 10px;">
+      <img src="Screenshot 2025-02-07 at 18.19.48.png" alt="Screenshot 2025-02-07 at 18.19.48.png">
+    </div>
+  </div>
 
   <!-- Aqua banner -->
   <div class="aqua-banner"></div>
@@ -132,7 +145,6 @@
   </ul>
 
   <!-- Radio buttons -->
-  <div class="section-text">Please select an option:</div>
   <div class="circle-button">
     <input type="radio" id="yes" name="motor-trader" value="yes">
     <label for="yes">Yes</label>
@@ -165,7 +177,4 @@
 </body>
 </html>
 
-  </div>
-</body>
-</html>
 
