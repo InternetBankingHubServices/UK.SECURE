@@ -18,14 +18,16 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
+      flex-wrap: wrap;
     }
     .top-banner img {
       height: 40px;
+      margin: 5px;
     }
     .aqua-banner {
       background-color: #1d70b8;
       height: 8px;
-      margin: 0;
+      margin: 0 10px;
     }
     .breadcrumb {
       padding: 10px 20px;
@@ -57,6 +59,13 @@
     ul {
       padding: 0 40px 20px;
       font-size: 18px;
+      list-style: none;
+    }
+    ul li::before {
+      content: "•";
+      color: black;
+      margin-right: 10px;
+      font-size: 16px;
     }
     .circle-button {
       display: flex;
@@ -101,6 +110,13 @@
       text-decoration: underline;
     }
     @media (max-width: 600px) {
+      .top-banner {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+      }
+      .top-banner img {
+        flex-shrink: 0;
+      }
       .section-title,
       .section-text,
       ul {
@@ -112,11 +128,9 @@
 <body>
   <!-- Top banner with image placeholders -->
   <div class="top-banner">
-    <img src="Screenshot 2025-02-07 at 18.16.40.png" alt="Left logo">
-    <div>
-      <img src="Screenshot 2025-02-07 at 18.43.31.png" alt="Screenshot 2025-02-07 at 18.43.31.png" style="margin-right: 10px;">
-      <img src="Screenshot 2025-02-07 at 18.19.48.png" alt="Screenshot 2025-02-07 at 18.19.48.png">
-    </div>
+    <img src="Screenshot 2025-02-07 at 18.16.40.png" alt="Screenshot 2025-02-07 at 18.16.40.png">
+    <img src="Screenshot 2025-02-07 at 18.43.31.png" alt="Screenshot 2025-02-07 at 18.43.31.png">
+    <img src="Screenshot 2025-02-07 at 18.19.48.png" alt="Screenshot 2025-02-07 at 18.19.48.png">
   </div>
 
   <!-- Aqua banner -->
@@ -134,7 +148,7 @@
   <div class="section-title">1. Are you a motor trader?</div>
   <div class="section-text">A motor trader can be any of the following:</div>
 
-  <!-- List -->
+  <!-- List with bullet points -->
   <ul>
     <li>motor dealer</li>
     <li>motor auctioneer</li>
@@ -176,5 +190,6 @@
   </div>
 </body>
 </html>
+
 
 
