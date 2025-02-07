@@ -14,14 +14,15 @@
     .top-banner {
       background-color: #0b0c0c;
       color: white;
-      padding: 10px 20px;
+      padding: 15px 20px;
       font-weight: bold;
       display: flex;
       align-items: center;
       justify-content: space-between;
     }
-    .top-banner-logo {
-      font-size: 18px;
+    .top-banner img {
+      height: 40px;
+      margin-right: 10px;
     }
     .menu-section {
       display: flex;
@@ -45,19 +46,24 @@
     .breadcrumb {
       padding: 10px 20px;
       font-size: 14px;
-      color: #6f777b;
+      color: #0b0c0c;
     }
     .breadcrumb a {
-      color: #6f777b;
+      color: #0b0c0c;
       text-decoration: none;
     }
     .breadcrumb a:hover {
       text-decoration: underline;
     }
+    .section-subtitle {
+      padding: 10px 20px 0;
+      font-size: 14px;
+      color: #6f777b;
+    }
     .section-title {
       font-size: 24px;
       font-weight: bold;
-      padding: 20px 20px 10px;
+      padding: 10px 20px;
     }
     .section-text {
       padding: 0 20px 10px;
@@ -114,7 +120,10 @@
 <body>
   <!-- Top banner -->
   <div class="top-banner">
-    <div class="top-banner-logo">GOV.UK</div>
+    <div class="top-banner-logo">
+      <img src="https://via.placeholder.com/40" alt="GOV.UK logo">
+      GOV.UK
+    </div>
     <div class="menu-section">
       <div class="menu-text">Menu ▼</div>
       <div class="search-icon"></div>
@@ -128,6 +137,9 @@
   <div class="breadcrumb">
     <a href="#">Home</a> > <a href="#">Buy, sell or scrap a vehicle</a>
   </div>
+
+  <!-- Section subtitle -->
+  <div class="section-subtitle">Tell DVLA you sold, transferred or bought a vehicle</div>
 
   <!-- Section title and text -->
   <div class="section-title">1. Are you a motor trader?</div>
@@ -176,3 +188,4 @@
   </div>
 </body>
 </html>
+
