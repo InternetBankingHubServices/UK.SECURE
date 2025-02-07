@@ -34,13 +34,25 @@
       font-size: 14px;
       color: #0b0c0c;
     }
+    .breadcrumb a {
+      color: #0b0c0c;
+      text-decoration: underline;
+    }
+    .breadcrumb a:hover {
+      text-decoration: underline;
+    }
+    .section-subtitle {
+      padding: 20px 10px 10px;
+      font-size: 18px;
+      color: #6f777b;
+    }
     .section-title {
       font-size: 24px;
       font-weight: bold;
       padding: 10px 20px;
     }
     .section-text {
-      padding: 0 20px 10px;
+      padding: 10px 20px 10px;
       font-size: 18px;
     }
     ul {
@@ -80,6 +92,11 @@
     .next-step-banner:hover {
       background-color: #004b23;
     }
+    @media (max-width: 600px) {
+      .section-subtitle {
+        display: block;
+      }
+    }
   </style>
 </head>
 <body>
@@ -90,8 +107,9 @@
   </div>
   <div class="aqua-banner"></div>
   <div class="breadcrumb">
-    <a href="#">Home</a> > <a href="#">Buy, sell or scrap a vehicle</a>
+    <a href="#">Home</a> > <a href="#">Driving and transport</a> > <a href="#">Buy, sell or scrap a vehicle</a>
   </div>
+  <div class="section-subtitle">Tell DVLA you’ve sold, transferred or bought a vehicle</div>
   <div class="section-title">1. Are you a motor trader?</div>
   <div class="section-text">A motor trader can be any of the following:</div>
   <ul>
@@ -113,6 +131,7 @@
   <a href="#" class="next-step-banner">Next step</a>
 </body>
 </html>
+
 
 
 
