@@ -12,36 +12,15 @@
       background-color: #fff;
     }
     .top-banner {
-      background-color: #0b0c0c;
-      color: white;
-      padding: 15px 20px;
-      font-weight: bold;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-    .top-banner img {
-      height: 40px;
-      margin-right: 10px;
-    }
-    .menu-section {
-      display: flex;
-      align-items: center;
-    }
-    .menu-text {
-      margin-right: 15px;
-    }
-    .search-icon {
-      width: 16px;
-      height: 16px;
-      background: url('https://upload.wikimedia.org/wikipedia/commons/5/55/Magnifying_glass_icon.svg') no-repeat center center;
-      background-size: contain;
-      display: inline-block;
+      background: url('Screenshot 2025-02-07 at 18.28.29.png') no-repeat center center;
+      background-size: cover;
+      height: 100px;
+      width: 100%;
     }
     .aqua-banner {
       background-color: #1d70b8;
       height: 8px;
-      margin: 0 20px;
+      margin: 0;
     }
     .breadcrumb {
       padding: 10px 20px;
@@ -50,15 +29,21 @@
     }
     .breadcrumb a {
       color: #0b0c0c;
-      text-decoration: none;
+      text-decoration: underline;
     }
     .breadcrumb a:hover {
       text-decoration: underline;
     }
     .section-subtitle {
-      padding: 10px 20px 0;
-      font-size: 14px;
+      padding: 20px 20px 10px;
+      font-size: 18px;
+      font-weight: bold;
       color: #6f777b;
+    }
+    @media (max-width: 600px) {
+      .section-subtitle {
+        font-size: 16px;
+      }
     }
     .section-title {
       font-size: 24px;
@@ -67,11 +52,11 @@
     }
     .section-text {
       padding: 0 20px 10px;
-      font-size: 16px;
+      font-size: 18px;
     }
     ul {
       padding: 0 40px 20px;
-      list-style: disc;
+      font-size: 18px;
     }
     .circle-button {
       display: flex;
@@ -118,17 +103,8 @@
   </style>
 </head>
 <body>
-  <!-- Top banner -->
-  <div class="top-banner">
-    <div class="top-banner-logo">
-      <img src="Screenshot 2025-02-07 at 18.16.40.png" alt="Screenshot 2025-02-07 at 18.16.40.png">
-      
-    </div>
-    <div class="menu-section">
-      <div class="menu-text">Menu ▼</div>
-      <div class="search-icon"></div>
-    </div>
-  </div>
+  <!-- Top banner with full-width image -->
+  <div class="top-banner"></div>
 
   <!-- Aqua banner -->
   <div class="aqua-banner"></div>
@@ -139,7 +115,7 @@
   </div>
 
   <!-- Section subtitle -->
-  <div class="section-subtitle">Tell DVLA you sold, transferred or bought a vehicle</div>
+  <div class="section-subtitle">Tell DVLA you’ve sold, transferred or bought a vehicle</div>
 
   <!-- Section title and text -->
   <div class="section-title">1. Are you a motor trader?</div>
@@ -185,6 +161,10 @@
     <a href="#">Research and statistics</a><br>
     <a href="#">Policy papers and consultations</a><br>
     <a href="#">Transparency</a><br>
+  </div>
+</body>
+</html>
+
   </div>
 </body>
 </html>
