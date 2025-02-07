@@ -6,7 +6,7 @@
   <title>Tell DVLA - Motor Trader</title>
   <style>
     body {
-      font-family: "GDS Transport", Arial, sans-serif;
+      font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
       background-color: #fff;
@@ -44,14 +44,14 @@
     .section-subtitle {
       padding: 20px 10px 10px;
       font-size: 18px;
-      font-weight: normal;
+      font-weight: bold;
       color: #6f777b;
     }
     .section-title {
       font-size: 24px;
       font-weight: bold;
       padding: 10px 20px;
-      margin-bottom: 20px;
+      margin-bottom: 20px; /* Added gap below section title */
     }
     .section-text {
       padding: 0 20px 10px;
@@ -87,7 +87,7 @@
       background-color: #0b0c0c;
     }
     .next-step-banner {
-      background-color: #00703c;
+      background-color: #004b23; /* Darker green */
       color: white;
       text-align: center;
       padding: 15px;
@@ -95,34 +95,64 @@
       font-weight: bold;
       text-decoration: none;
       display: block;
-      font-size: 20px;
-      border-bottom: 4px solid #004b23;
     }
     .next-step-banner:hover {
-      background-color: #004b23;
+      background-color: #003d1d;
+    }
+    .footer {
+      background-color: #f3f2f1;
+      padding: 20px;
+      border-top: 1px solid #d5d5d5;
+    }
+    .footer a {
+      color: #1d70b8;
+      text-decoration: none;
+    }
+    .footer a:hover {
+      text-decoration: underline;
     }
     @media (max-width: 600px) {
-      .section-subtitle {
-        display: block;
-        text-align: left;
-        padding-left: 10px;
+      .top-banner {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+      }
+      .top-banner img {
+        flex-shrink: 0;
+      }
+      .section-title,
+      .section-text,
+      ul {
+        padding: 0 10px;
       }
     }
   </style>
 </head>
 <body>
+  <!-- Top banner with image placeholders -->
   <div class="top-banner">
     <img src="Screenshot 2025-02-07 at 18.16.40.png" alt="Logo 1">
     <img src="Screenshot 2025-02-07 at 18.43.31.png" alt="Logo 2">
     <img src="Screenshot 2025-02-07 at 18.19.48.png" alt="Logo 3">
   </div>
+
+  <!-- Aqua banner -->
   <div class="aqua-banner"></div>
+
+  <!-- Breadcrumb -->
   <div class="breadcrumb">
-    <a href="#">Home</a> > <a href="#">Driving and transport</a> > <a href="#">Buy, sell or scrap a vehicle</a>
+    <a href="#">Home</a> > <a href="#">Buy, sell or scrap a vehicle</a>
   </div>
+
+  <!-- Section subtitle -->
   <div class="section-subtitle">Tell DVLA you’ve sold, transferred or bought a vehicle</div>
+
+  <!-- Section title -->
   <div class="section-title">1. Are you a motor trader?</div>
+
+  <!-- Section text -->
   <div class="section-text">A motor trader can be any of the following:</div>
+
+  <!-- List with thicker bullet points -->
   <ul>
     <li>motor dealer</li>
     <li>motor auctioneer</li>
@@ -131,6 +161,8 @@
     <li>fleet operator</li>
     <li>car buying service</li>
   </ul>
+
+  <!-- Radio buttons -->
   <div class="circle-button">
     <input type="radio" id="yes" name="motor-trader" value="yes">
     <label for="yes">Yes</label>
@@ -139,7 +171,27 @@
     <input type="radio" id="no" name="motor-trader" value="no">
     <label for="no">No</label>
   </div>
+
+  <!-- Next step button -->
   <a href="#" class="next-step-banner">Next step</a>
+
+  <!-- Footer -->
+  <div class="footer">
+    <h3>Services and information</h3>
+    <a href="#">Benefits</a><br>
+    <a href="#">Births, deaths, marriages and care</a><br>
+    <a href="#">Business and self-employed</a><br>
+    <a href="#">Childcare and parenting</a><br>
+    <a href="#">Citizenship and living in the UK</a><br>
+    <a href="#">Crime, justice and the law</a><br>
+    <h3>Government activity</h3>
+    <a href="#">Departments</a><br>
+    <a href="#">News</a><br>
+    <a href="#">Guidance and regulation</a><br>
+    <a href="#">Research and statistics</a><br>
+    <a href="#">Policy papers and consultations</a><br>
+    <a href="#">Transparency</a><br>
+  </div>
 </body>
 </html>
 
